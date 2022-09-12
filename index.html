@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="template with html and css" />
+    <!-- fontawesome library -->
+    <link rel="stylesheet" href="css/vendors/font-awesome.min.css" />
+    <!-- css style file -->
+    <link rel="stylesheet" href="css/style.css" />
+	<!-- maplibre Google Map : Css File -->
+	<link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======================================= Navbar Section ======================================= -->
+    <nav class="nav">
+      <div class="container">
+        <!-- navbar logo -->
+        <div class="logo">
+          <a href="#" id="logoId">food<span>.</span></a>
+        </div>
+        <!-- menubar icon -->
+        <button class="nav-btn">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </button>
+        <!-- navbar links -->
+        <div class="links">
+          <!-- links -->
+          <ul class="nav-list">
+            <li class="list-item active"><a href="#">home</a></li>
+            <li class="list-item"><a href="#">pages</a></li>
+            <li class="list-item"><a href="#">portfolio</a></li>
+            <li class="list-item"><a href="#">blog</a></li>
+            <li class="list-item"><a href="#">elements</a></li>
+            <li class="list-item"><a href="#">shop</a></li>
+            <li class="list-item">
+              <a href="#">
+                reservation
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================================= Header Section ======================================= -->
+    <div class="header">
+      <!-- overlay layer -->
+      <div class="box-overlay"></div>
+      <div class="container">
+        <div class="header-content">
+          <!-- ++++++++++++++++++++ row 1 ++++++++++++++++++++ -->
+          <div class="row1">
+            <h1 class="main-title">
+              <span class="small-title">welcome</span>
+              prime beef steak <br />resturant
+            </h1>
+          </div>
+          <!-- ++++++++++++++++++++ row 2 ++++++++++++++++++++ -->
+          <div class="row2">
+            <!-- left image  -->
+            <div class="header-img">
+              <img src="images/home.png" alt="image not found" />
+            </div>
+            <!-- right contact-info  -->
+            <div class="header-info">
+              <p class="para1">Book a table directly</p>
+              <p class="phone-num">(014)323 68 48</p>
+              <p class="small-weekend">
+                opening hours : <span class="white"> Mon - fri:</span> 09:00 -
+                21:00 / <span class="white"> weekend </span> 09:00 - 22:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================= About Section ======================================= -->
+    <div class="about">
+      <div class="container">
+        <!-- +++++++++++++++++++ left part : about-info +++++++++++++++++++ -->
+        <div class="about-info">
+          <p class="small-title">our story</p>
+          <h2 class="section-title">
+            cooking is the art of <br />
+            adjustment
+          </h2>
+          <p class="section-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            Tempora omnis accusamus voluptatum voluptas ratione nesciunt
+            delectus ullam Tempora omnis accusamus corrupti similique
+          </p>
+          <p class="author-para">
+            <span class="author-span">thomos eggsy</span> - master chief of at
+            resturant
+          </p>
+          <div class="about-btn">
+            <button>reservation</button>
+          </div>
+        </div>
+        <!-- +++++++++++++++++++++++++ right part : about-img +++++++++++++++++++++++++ -->
+        <div class="about-img">
+          <!-- about-image -->
+          <img src="images/about-img.jpg" alt="image not found" class="section-img" />
+          <!-- about-video -->
+          <video class="videoTag" controls>
+            <source src="video/vedio1.mp4" type="video/mp4" />
+          </video>
+          <!-- video icon -->
+          <div class="controls-video">
+            <div class="controls-cont">
+              <span class="control-text">play</span>
+              <i class="fa fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================= special-menu Section ======================================= -->
+    <div class="special-menu">
+		<div class="container">
+			<!-- +++++++++++++++++ header part : special-menu header +++++++++++++++++ -->
+			<div class="special-header">
+				<p class="small-title">special menu</p>
+				<h2 class="section-title"> delicious flavour of autumn </h2>		
+			</div>
+			<!-- +++++++++++++++++++++++++++++ slider part : special-menu body +++++++++++++++++ -->
+			<div class="special-body">
+				<!-- +++++++++++++++++++++++++++++++ Slider container ++++++++++++++++++++++++++ -->
+				<div class="slider-container menu-slider">
+					<ul class="slider" id="testimUlId">
+						<!-- //////////////////////////// card 1  //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/menu-5.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $50 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Super BBQ Grill No Smoke
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+						<!-- //////////////////////////// card 2 //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/menu-6.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $42 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Queen Of Autumn
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+						<!-- //////////////////////////// card 3 //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/menu-8.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $33 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Royal Liver Fried 
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+						<!-- //////////////////////////// card 4 //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/img2.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $15 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Royal Liver Fried 
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+						<!-- //////////////////////////// card 5 //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/img4.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $28 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Royal Liver Fried 
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+						<!-- //////////////////////////// card 6 //////////////////////////// -->
+						<li class="card slider-item">
+							<!-- card-image -->
+							<div class="card-image">
+								<img src="images/img6.jpg" alt="image not found" />
+								<!-- card-price -->
+								<div class="price-holder"> $88 </div>
+							</div>
+							<!-- card-content -->
+							<div class="card-content">
+								<!-- card-title -->
+								<div class="card-title">
+									<h3 class="card-title-h3"> 
+										Royal Liver Fried 
+									</h3>
+									<p class="card-title-para">
+										Fried eggs , fried bacon, toast, fresh tomato salad, cup of coffee or tea 
+									</p> 
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- ------------------------- slider Arrows ------------------------- -->
+					<div class="slider-arrows">
+                        <!-- left-arrow -->
+                        <button type="button" class="arrow prev">
+                            <i id="left_arrow"  class="fa fa-angle-left  fa-2x"></i>
+                        </button>
+                        <!-- right-arrow -->
+                        <button type="button" class="arrow next">
+                        <i id="right_arrow" class="fa fa-angle-right fa-2x"></i>
+                        </button>
+                    </div>					
+				</div> 
+			</div>
+			<!-- ++++++++++++++++++++++++++++++++++ view more button ++++++++++++++++++++++++++++++++++ -->
+			<div class="viewMore">
+				<a href="#">view full menu</a>
+			</div>
+		</div>  
+	</div>
+	<!-- ======================================= Testimonials Section ======================================= -->
+	<div class="testimonials">
+		<!-- ++++++++++ overlay layer ++++++++++ -->
+		<div class="box-overlay"></div> 
+		<!-- ++++++++++ testimonials container ++++++++++ -->
+		<div class="testi-cont">
+			<!-- --------- "qoute" icon --------- -->
+			<div class="testi-qoute">
+				<i class="fa fa-quote-left"></i>
+			</div>
+			<!-- --------- "paragraph" part --------- -->
+			<div class="testi-para">
+				<p>i love cooking for myself and cooking for my family </p>
+			</div>
+			<!-- --------- "author" part --------- -->
+			<div class="testi-author">
+				<h5>AI Roker</h5>
+			</div>
+		</div>
+	</div>  
+	<!-- ======================================= chief Section ======================================= -->
+	<div class="chief">
+		<div class="container">
+			<!-- ++++++++++++++++++++++ left part : "chief image" ++++++++++++++++++++++ -->
+			<div class="chief-img">
+				<img src="images/chef_img1.png" alt="image not found" />
+			</div>
+			<!-- ++++++++++++++++++++++ right part : "chief info" ++++++++++++++++++++++ -->
+			<!-- +++++++++++++ Slider container +++++++++++++ -->
+			<div class="chief-info">
+				<p class="small-title">review</p>
+				<h2 class="section-title"> the food's masters<br/> say about us</h2>
+				<ul class="slider" id="chiefUlId">
+					<!-- //////////////////////////// card 1  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Best resturant that i used to experience!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								Proin gravide dolor sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">thomos eggsy</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+					<!-- //////////////////////////// card 2  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Good Food that i eat in my life!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								Food and Drink dolor sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">mahmoud eltokhey</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+					<!-- //////////////////////////// card 3  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Excited Place that i visit in the world!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								WoW Food dolor sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">sayed ali</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+					<!-- //////////////////////////// card 4  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Tasty Meat that i eat to experience!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								Meat And Chicken sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">yasser samir</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+					<!-- //////////////////////////// card 5  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Best resturant that i used to experience!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								Proin gravide dolor sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">thomos eggsy</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+					<!-- //////////////////////////// card 6  //////////////////////////// -->
+					<li class="card slider-item">
+						<h3>"Best resturant that i used to experience!"</h3>
+						<div class="chief-desc">
+							<p class="section-para">
+								Proin gravide dolor sit amet consectetur adipisicing elit. Praesentium Tempora omnis accusamus voluptatum voluptas ratione nesciunt delectus ullam Tempora delectus ullam Tempora omnis accusamus corrupti similique voluptatum voluptas ratione nesciunt delectus ullam Tempora.
+							</p>
+							<p class="author-para">
+								<span class="author-span">thomos eggsy</span> - master chief of at resturant
+							</p>
+						</div>
+					</li>
+				</ul>
+				<!-- ------------------------- slider Arrows ------------------------- -->
+				<div class="slider-arrows">
+					<!-- left-arrow -->
+					<button type="button" class="arrow prev" id="chief_left_arrow">
+						<i   class="fa fa-arrow-left"></i>
+					</button>
+					<!-- right-arrow -->
+					<button type="button" class="arrow next" id="chief_right_arrow" >
+						<i class="fa fa-arrow-right"></i>
+					</button>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<!-- ======================================= promotion Section ======================================= -->
+	<div class="news">
+		<div class="container">
+			<!-- ++++++++++++++ promotion header ++++++++++++ -->
+			<div class="news-header">
+				<p class="small-title">our news</p>
+				<h2 class="section-title"> promotions &amp; events </h2>		
+			</div>
+			<!-- ++++++++++++++ promotion body ++++++++++++++ -->
+			<div class="news-body">
+				<!-- ------- box 1 ------- -->
+				<div class="news-box">
+					<img src="images/img4.jpg" alt="Image Not Found" />
+				</div>
+				<!-- ------- box 2 ------- -->
+				<div class="news-box has-arrow arrow-left">
+					<div class="text-box">
+						<h3> beef sauteed  <br/> onios - let's enjoy !</h3>
+						<p class="new-box-para">
+							123 broadway st NY, united states <br/>
+							10:00Am - 14:00Pm <br/>
+							monday,sep,25th,2016
+						</p>
+					</div>
+				</div>
+				<!-- ------- box 3 ------- -->
+				<div class="news-box">
+					<img src="images/img3.jpg" alt="Image Not Found" />
+				</div>
+				<!-- ------- box 4 ------- -->
+				<div class="news-box has-arrow arrow-right">
+					<div class="text-box">
+						<h3> beef sauteed  <br/> onios - let's enjoy !</h3>
+						<p class="new-box-para">
+							123 broadway st NY, united states <br/>
+							10:00Am - 14:00Pm <br/>
+							monday,sep,25th,2016
+						</p>
+					</div>
+				</div>
+				<!-- ------- box 5 ------- -->
+				<div class="news-box">
+					<img src="images/img5.jpg" alt="Image Not Found" />
+				</div>
+				<!-- ------- box 6 ------- -->
+				<div class="news-box has-arrow arrow-top">
+					<div class="text-box">
+						<h3> beef sauteed  <br/> onios - let's enjoy !</h3>
+						<p class="new-box-para">
+							123 broadway st NY, united states <br/>
+							10:00Am - 14:00Pm <br/>
+							monday,sep,25th,2016
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- ======================================= contact Section ======================================= -->
+	<div class="contact">
+		<div class="container">
+			<!-- ++++++++++++++ contact header ++++++++++++ -->
+			<div class="contact-header">
+				<p class="small-title">contact us</p>
+				<h2 class="section-title">we always here to helps you</h2>		
+			</div>
+			<!-- ++++++++++++++ contact body ++++++++++++++ -->
+			<div class="contact-body">
+				<!-- //////////// left part //////////// -->
+				<div class="contact-left">
+					<h3 class="left-h3">melbourne. <span class="left-h3-span">australia</span></h3>
+					<p class="contact-para">
+						269 king str,05th floor, utral house building. <br/>
+						melbourne, VIC 3000, australia.
+					</p>
+					<p class="contact-para"><span class="blackEmail">email: </span>info@airesturant.com</p>
+					<div class="line"></div>
+				</div>
+				<!-- //////////// right part //////////// -->
+				<div class="contact-right">
+					<div class="call-directly">
+						<p class="contact-right-para">Call directly:</p>
+						<h3 class="phone-number">
+							+99 (0) 344 956 4050
+						</h3>
+					</div>
+					<div class="lunch-service">
+						<h4 class="contact-h4">lunch service:</h4>
+						<p class="contact-para">
+							Friday, Saturday and Sunday, Bookings <br/>
+							from 12am - 1.30pm.
+						</p>
+					</div>
+					<div class="dinner-service">
+						<h4 class="contact-h4">dinner service:</h4>
+						<p class="contact-para">
+							Daily: Bookings from 6pm - 9.30pm.
+						</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<!-- ++++++++++++++ Google Map ++++++++++++++ -->
+		<div id="map"></div>
+	</div>
+	<!-- ======================================= footer Section ======================================= -->
+	<div class="footer">
+		<div class="footer-container">
+			<!-- ++++++++++++++ footer : logo ++++++++++++++ -->
+			<div class="footer-logo">
+				<a href="#" id="logoId">food<span>.</span></a>
+			</div>
+			<!-- ++++++++++++++ footer : links ++++++++++++++ -->
+			<div class="footer-links">
+				<ul>
+					<li> <a href="#">reservation</a> </li> 
+					<li> <a href="#">functions  </a> </li> 
+					<li> <a href="#">contact    </a> </li> 
+					<li> <a href="#">reviews &amp; media</a> </li>
+				</ul>
+			</div>
+			<!-- ++++++++++++++ footer : social-icons ++++++++++++++ -->
+			<div class="footer-icons">
+				<ul>
+					<li> <a href="#"><i class="fa fa-twitter"></i></a> </li> 
+					<li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
+					<li> <a href="#"><i class="fa fa-google-plus"></i></a> </li>
+					<li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
+					<li> <a href="#"><i class="fa fa-feed"></i></a> </li>
+				</ul>
+			</div>
+			<!-- ++++++++++++++ footer : copyright ++++++++++++++ -->
+			<div class="copyright">
+				<p> &copy; ai resturant.<br/>design by loganCee. all rights reserved</p>
+			</div>
+		</div>
+	</div>
+    <!-- jquery library -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+	 <!-- Google Map : Script File -->
+	 <script src="https://unpkg.com/maplibre-gl@2.3.0/dist/maplibre-gl.js"></script>
+  </body>
+</html>
+
+
+
+  

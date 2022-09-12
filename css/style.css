@@ -1,0 +1,1731 @@
+/* ++++++++++++++++++++++++++++++ Global Style ++++++++++++++++++++ */
+*
+{
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+}
+body
+{
+	font-family: serif;
+	height: auto;
+}
+.container
+{
+	width: 85% ;
+	height: auto;
+	overflow: hidden;	  
+	margin: 0 auto ;
+	/* border: 2px solid #0f0;  */
+}
+/* --------------------- overlay layer ----------------- */
+.box-overlay
+{
+    /* بحرية بالنسبة للديف الاب overlay عشان احرك طبقة ال */
+    position: absolute;
+    /*   top left corner عشان يبدا من ال */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+}
+/* ++++ main-title ++++ */
+.main-title
+{
+    color:#fff;
+    text-transform: capitalize;
+    font-size:60px; 
+	font-weight: 600;
+}
+/* ++++ section-title ++++ */
+.section-title
+{
+	color: #333;
+    font-size: 38px;
+    margin-top: 16px;
+    margin-bottom: 30px;	
+	text-transform: capitalize;
+}
+/* ++++ small-title ++++ */
+.small-title
+{
+	display: block;
+	font-size: 16px ;
+	font-weight: 400;
+	letter-spacing: 9px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+	color: #d4d4d4;
+}
+/* ++++++++++++ section-para ++++++++++++ */
+.section-para
+{
+	font-size: 17px ;
+	color: #999;
+	line-height: 1.6;
+}
+/* ++++++++++++ author-para ++++++++++++++ */
+.author-para
+{
+	font-size: 16px;
+    text-transform: capitalize;
+    color: #999;
+	margin-top: 30px;
+    margin-bottom: 65px;
+	font-style: italic;
+}
+/* ++++++++++++ author-span +++++++++++++  */
+.author-span
+{
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+}
+/* +++++++++++++++++++++ Responsive +++++++++++++++++++++ */
+/* ////////// section-title , small-title ////////// */
+/*  mobile Screen  */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	/* ++++ section-title ++++ */
+	.section-title
+	{
+		font-size: 30px  !important;
+		text-align: center !important;
+	}	
+	/* ++++ small-title ++++ */
+	.small-title
+	{
+		font-size: 14px !important;
+		text-align: center !important;
+	}	
+	/* ++++++++++++ section-para +++++++++++++  */
+	.section-para
+	{
+		font-size: 18px;
+		text-align: center;
+	}
+	/* ++++++++++++ author-para +++++++++++++  */
+	/* ++++++++++++ author-span +++++++++++++  */
+	.author-para 					, 
+	.author-para	.author-span
+	{
+		font-size: 14px; 
+		margin-bottom: 65px;
+		text-align: center;
+	}
+}
+/*  tablet Screen  */
+@media( min-width : 767px ) and ( max-width : 1072px ) 
+{
+	/* ++++++++++++ section-title +++++++++++++  */
+	.section-title
+	{
+		font-size: 28px !important;
+	}
+	/* ++++ small-title ++++ */
+	.small-title
+	{
+		font-size: 16px !important;
+		text-align: right !important;
+	}	
+	/* ++++++++++++ section-para +++++++++++++  */
+	.section-para
+	{
+		font-size: 16px !important ;
+	}
+	/* ++++++++++++ author-para +++++++++++++  */
+	/* ++++++++++++ author-span +++++++++++++  */
+	.author-para 					, 
+	.author-para	.author-span
+	{
+		font-size: 14px !important;
+		margin-bottom: 65px;
+	}
+}	 
+/* ======================================= Navbar Section ======================================= */
+/* +++++++++++++++++++++++ Navbar "nav" class +++++++++++++++++ */
+.nav
+{
+	position: fixed;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+	padding: 12px 0px ;
+    /* header اكبر من ال z-index هي الطبق الاعلي حيث هعطيه navbar في اعلي شمال الصفحة وهخلي ال header فهثبت ال header يظهر فوق ال navbar عشان اخلي ال */
+    z-index: 999 ;
+	/* border:2px solid #f00; */
+}
+/* ++++++++++++ logo +++++++++++++++ */
+.nav .logo
+{
+	float: left;
+	width: 15%;
+	height: auto;
+	overflow: hidden;
+	text-align: left; 
+	margin: 0 ;
+	/* border: 2px solid #ff0 ;   	 */
+}
+
+/* ++++++++++++++ logo text ++++++++++++++ */
+.nav .logo	#logoId
+{
+	text-decoration: none;
+	font-size: 35px;
+	text-transform: capitalize ;
+	color: #fff;
+}
+/* ++++++++++++++ logo dot ++++++++++++++ */
+.nav .logo	#logoId	span
+{
+	font-size: 40px;
+    color: #ff0157;
+}
+/* ++++++++++ navbar : menubar icon ++++++++++ */
+.nav 	.nav-btn
+{
+	/* appear in "mobile screen" */
+	display: none; 
+	position: absolute;
+	top: 20px;
+    right: 10px;
+	width: 40px ;
+	padding: 8px 7px ;
+	background-color: #333;
+	border-radius: 3px;
+	border: none ;
+	outline: none;
+	cursor: pointer;
+}
+/* three lines of "menubar button"  */
+.nav 	.nav-btn	.btn-line
+{
+	display: block;
+	height: 3px;
+	margin-bottom: 6px;
+	background-color: #fff;
+}
+/* last line of "menubar button"  */
+.nav 	.nav-btn	.btn-line:last-child
+{
+	margin-bottom: 0 ;
+}
+/* +++++++++++++++ nav links ++++++++++++++++ */
+.nav .links
+{
+	float: right;
+	width: 85% ;
+	height: auto;
+	text-align: right; 
+	margin-top: 10px;
+	/* border: 2px solid #f0f ; 	 */
+}
+/* ++++++++++++ navbar : <ul></ul> ++++++++++++ */
+.nav .links	.nav-list
+{
+	list-style: none;
+	margin: 0 ;
+	color: #fff;
+	/* border: 2px solid #f0f;   */
+}
+/* ++++++++++++ navbar : <li> </li> ++++++++++++ */
+.nav .links	.nav-list .list-item
+{
+	position: relative;
+	display: inline-block;
+	margin-left: 18px ;
+	cursor: pointer;
+	padding: 0 ;
+	transition:  0.3s ease-in-out;
+	/* border: 2px solid #ff0 ;  */
+}
+/* ++++++++++++ navbar : <li> <a></a> </li> ++++++++++++ */
+.nav .links	.nav-list .list-item	a
+{
+	display: block;
+	padding: 10px 0px;   
+	color: #fff;
+}
+/* ++++++++++++++line under :  <ul> <li></li> </ul> ++++++++++++++ */
+.nav .links	.nav-list .list-item::before 
+{
+	content: '';
+	position: absolute;
+	width: 0px ;
+	bottom: 4px ;
+	left:0 ;
+	right: 0 ;
+	height: 3px ;
+	background-color: #fff ;
+	transition: width 0.4s ease-in-out;
+}
+/* navbar : when hover , active of <li></li> , appear under-line  */
+.nav .links	.nav-list .list-item.active:before  ,
+.nav .links	.nav-list .list-item:hover:before 
+{
+	width: 100%;
+} 
+/* ++++++++++++ first link : "home" ++++++++++++ */
+.nav .links	.nav-list .list-item:first-child
+{
+	margin-left: 0px ;
+}
+/* ++++++++++++ last link : "resturant" : arrow icon ++++++++++++ */
+.nav .links .nav-list .list-item:last-child	 a  i	
+{
+	position: relative;
+	vertical-align: middle;
+	right: 0 ;
+	transition: right 0.4s ease-in-out;
+}
+/* when hover on last-link "resturant" , "arrow-icon" will be moved to right */
+.nav .links .nav-list .list-item:last-child:hover  a   i	
+{
+	right: -10px ;
+}
+.nav .links	ul	li	a       ,
+.nav .links	ul	li	a:hover ,
+.nav .links	ul	li	a:focus
+{
+	text-decoration: none ;
+	color: #fff ;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+/* +++++++++++++++++++++++ Navbar "sticky" class +++++++++++++++++ */
+/*  When ScrollY , navbar will Changed */
+.stickyNav
+{
+	background-color: #fff;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.stickyNav .logo	#logoId
+{
+	color: #333 !important;
+}
+/* ++++++++++++ navbar : <li> <a></a> </li> ++++++++++++ */
+.stickyNav .links  .nav-list .list-item   a
+{
+	color: #333;
+}
+/* when hover on last-link "resturant" , "arrow-icon" will be changed background-color*/
+.stickyNav .links	.nav-list .list-item.active:before 	,
+.stickyNav .links	.nav-list .list-item:hover:before 
+{
+	background-color: #333;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= tablet , Laptop Screen ================ */
+@media( min-width : 993px ) 
+{
+	/* +++++++++++++++ nav links ++++++++++++++++ */
+	/* فالو كبرت الشاشة هتكون مختفية فهظهرها links عشان اغلق الmenubar عشان لما اضغط علي ال  */
+	.nav .links
+	{
+		display: block !important;
+	}
+}
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 992px ) 
+{
+	/* hide the navbar links */
+	.nav .links 
+	{
+		display: none;
+		float: none;
+		/* to clear "float" effect */
+		clear: both;
+		width: 100%;
+		text-align: center;
+		/* border: 2px solid #f0f; 	 */
+	}	
+	/* navbar logo  */
+	.nav .logo
+	{
+		width: 100%;
+		float: left;
+	}
+	.nav .links .nav-list
+	{
+		width: 250px;
+		margin: 0 auto;
+		transition: right 0.9s ease-in-out;
+	}
+	/* <ul> <li></li> </ul>  */
+	.nav .links .nav-list .list-item
+	{
+		display: block;
+		width: 100%;
+		position: relative;
+		right: 0 ;
+		text-align: center;
+		margin: 5px 0 ;
+		background-color: #333;
+		border-right: 5px solid #252525 ;
+	}
+	/* if "<nav></nav>" not contain class "activeLinks" , then "hide" the "<li></li>" */
+	.nav .links:not(.activeLinks) .nav-list .list-item
+	{
+		right: -650px ;
+	}
+	/* make "delay" for "<li></li>"  */
+	.nav .links .nav-list .list-item:nth-child(2)
+	{
+		transition-delay: 0.2s ;
+	}
+	.nav .links .nav-list .list-item:nth-child(3)
+	{
+		transition-delay: 0.4s ;
+	}
+	.nav .links .nav-list .list-item:nth-child(4)
+	{
+		transition-delay: 0.6s ;
+	}
+	.nav .links .nav-list .list-item:nth-child(5)
+	{
+		transition-delay: 0.8s;
+	}
+	.nav .links .nav-list .list-item:nth-child(6)
+	{
+		transition-delay: 1s;
+	}
+	.nav .links .nav-list .list-item:nth-child(7)
+	{
+		transition-delay: 1.2s;
+	}		
+	.nav .links .nav-list .list-item	a
+	{
+		color: #fff !important;
+	}
+	.nav .links	.nav-list .list-item:before
+	{
+		background-color: #f00 !important;
+	}
+	.nav .links	.nav-list .list-item.active:before ,
+	.nav .links	.nav-list .list-item:hover:before
+	{
+		background-color: #f00 !important;
+	}
+	/* ++++++++++ navbar : menubar icon ++++++++++ */
+	.nav 	.nav-btn
+	{
+		display: block;
+	}
+}
+/* ====================================== Header Section ====================================== */
+.header
+{  
+    /* header اكبر من ال z-index هي الطبق الاعلي حيث هعطيه navbar في اعلي شمال الصفحة وهخلي ال header فهثبت ال header يظهر فوق ال navbar عشان اخلي ال */
+    position: relative; 
+    top: 0 ;
+    left: 0 ;
+    width: 100%;
+    height: 100vh;
+	background-image: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+	background-position: right center;
+    background-size: cover;
+	/* border: 2px solid #ff0157 ; */
+}
+/* ++++++++++++++++ container ++++++++++ */
+.header .container 
+{
+    position: absolute;
+    top: 30% ;
+    left:50% ;
+    transform: translateX(-50%);
+    /*  headerContainer يكونوا في منتصف ال h2 , p عشان ال  */
+	/* border: 2px solid #00f ;   */
+}
+/* ++++++++++++++++++++ header : header-image , header-info ++++++++++++++++++ */
+.header .header-content	 
+{
+	width: 100%;
+	height: 100%; 
+	padding: 0 ;
+	margin: 0 auto;
+	/* border: 2px solid #ff0;  */
+}
+/* ++++++++++++++++++++ row 1 ++++++++++++++++++++ */
+.header .header-content .row1
+{
+	display: block;
+	height: auto;
+	/* border: 2px solid #0f0; */
+}
+/* ++++ header : h1 : header-title ++++ */
+.header .header-content .row1 .main-title
+{
+	
+    color:#fff;
+    text-transform: capitalize;
+    font-size:60px; 
+	font-weight: 600;
+	text-align: right;
+	/* border: 2px solid #00f;  */
+}
+/* ++++ header : header-title : small-title ++++ */
+.header .header-content .header-title .small-title
+{
+	text-align: right;
+}
+/* ++++++++++++++++++++ row 2 ++++++++++++++++++++ */
+/* +++++++ header : header-image +++++++ */
+.header .header-content .header-img
+{
+	float: left;
+	width: 35%;
+	margin-right: 5% ;
+	margin-top: 5% ;
+	/* border: 2px solid #f0f;    */
+}
+.header .header-content .header-img  img
+{
+	width: 300px;
+}
+/* +++++++ header : header-info +++++++ */
+.header .header-content .header-info
+{
+	float: right;
+	width: 50%;
+	margin-left: 5% ;
+	text-align: right;
+	margin-top: 75px ;
+	color: #ccc;
+	/* border: 2px solid #00f;  */
+}
+.header .header-content .header-info .phone-num
+{	
+	font-size: 25px;
+	color : #fff ;
+	margin: 0 0 22px 0 ;
+}
+.header .header-content .header-info .para1     ,
+.header .header-content .header-info .small-weekend
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+.header .header-content .header-info .small-weekend .white
+{
+	color: #fff;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	/* +++++++ header : header-image +++++++ */
+	.header .header-content .header-img
+	{
+		display: none;
+	}
+	/* +++++++ header : header-info +++++++ */
+	.header .header-content .header-info
+	{
+		float: none;
+		width: 90% ;
+		margin-left: 5% ;
+		margin-right: 5% ;
+	}
+	.header .header-content .row1 .main-title
+	{
+		font-size: 40px ;
+		text-align: center;
+	}
+}
+/* ======================================= About Section ======================================= */
+.about
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;     
+	margin-top: 150px ;
+	margin-bottom: 50px ;
+	/* border: 2px solid #f00;   */
+}
+.about	.container
+{
+	padding: 50px  ; 
+}
+/* +++++++++++++++++++ left part : about-info +++++++++++++++++++ */
+.about	.container  .about-info
+{
+	float: left;
+	width: 50% ;
+	margin-right: 5% ;
+	height: 450px;
+	/* overflow: hidden; */
+	/* border: 2px solid #00f;   */
+}
+/* ++++ small-title ++++ */
+.about	.container  .about-info	.small-title
+{
+	text-align: left !important;
+}
+.about	.about-container  .about-info	.about-btn
+{
+	display: block;
+	/* border: 2px solid #f00;  */
+}
+.about	.container  .about-info	.about-btn	button
+{
+	padding: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+	font-weight: bold;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #333;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.about	.container  .about-info	.about-btn	button:hover
+{
+	background-color: #ff0157;
+	border-color: #ff0157;
+	color: #fff;
+}
+/* +++++++++++++++++++ right part : about-img +++++++++++++++++++ */
+.about	.container  .about-img
+{
+	position: relative;
+	float: right;
+	width: 40% ;
+	margin-left: 5% ;
+	height: 450px;
+	/* border: 2px solid #00f;   */
+}
+/* ++++++++++++ "dot-pattern" image ++++++++++++ */
+.about	.container  .about-img::after
+{
+	content: "";
+	position: absolute;
+	top: 12%;
+    right: 15%;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -1 ;
+	background-image: url("../images/dotted_light.png");
+	background-repeat: repeat ;
+	/* border: 2px solid #0f0;  */
+}
+.about	.container  .about-img	img
+{
+	width: 100%;
+	height: 100%;
+}
+/* ++++++++++++++ video icon ++++++++++++++ */
+.about	.container  .about-img .controls-video
+{
+	width: 100%;
+	position: absolute;
+	top: 0px ;
+	right: 0px;	
+	padding: 20px 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	/* border: 2px solid #00f;   */
+}
+.about	.container  .about-img .controls-video .controls-cont
+{
+	display: block;
+	position: absolute;
+	top: 10px ;
+	right: 10px;	
+	width: 70px ;
+	height: 28px ;
+	margin-bottom: 0px ;
+	/* border: 2px solid #f00;  */
+}
+.about	.container  .about-img .videoTag
+{
+	display: none;
+	width: 100% ;
+	height: 100% ;
+	/* border: 2px solid #f00;  */
+}
+/* ++++++++++++++ video icon : control-text ++++++++++++++ */
+.about	.container  .about-img .controls-video .control-text
+{
+	color: #fff ;
+	text-transform: uppercase;
+	font-size: 14px ;
+	margin-right: 6px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+/* ++++++++++++++ video icon : control-icon ++++++++++++++ */
+.about	.container  .about-img .controls-video i
+{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px ;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	.about
+	{
+		margin: 30px 0 ;
+	}
+	/* +++++++++++++++++++ left part : about-info +++++++++++++++++++ */
+	/* +++++++++++++++++++ right part : about-img +++++++++++++++++++ */
+	.about	.container  .about-info ,
+	.about	.container  .about-img 
+	{
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		clear: both;
+	}
+	.about	.container  .about-info 
+	{
+		margin-bottom: 30px ;
+		text-align: center;
+	}
+}
+/* ================= tablet Screen ================ */
+@media( min-width : 767px ) and ( max-width : 1000px ) 
+{
+	.about	.container
+	{
+		margin: 10px auto ;
+	}
+	.about	.container  .about-info	.about-btn	button
+	{
+		width: 140px;
+		height: 45px;
+		font-size: 14px;
+	}
+}	 
+/* ##################################### start special-menu #################################### */
+.special-menu
+{
+	position: relative;   
+	width: 100% ; 
+	height: auto ;
+ 	overflow: hidden ; 
+	text-align: center; 
+	margin-top: 150px ;
+	padding: 50px 0;
+    background-image: url("../images/bk2.JPG");
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+    /* border: 2px solid #f00;  */
+} 
+/* ++++++++++++++ special-menu header ++++++++++++++ */
+.special-menu .special-header
+{
+	text-align: center ;
+	/* border: 2px solid #00f;  */
+}
+/* +++++++++++++++++ slider part : special-menu body +++++++++++++++++ */
+.special-menu .special-body
+{
+	position: relative;
+	width: 100%;
+    height: auto;
+    overflow: hidden; 
+	text-align: center;
+    margin: 20px 0; 
+	/* border: 2px solid #0ff;  */
+}
+/* ++++++++++++++++++++++ slider : <ul></ul> ++++++++++++++++++ */
+.special-menu	  ul.slider
+{
+	width: 200% ;
+	height: auto ;
+	overflow: hidden ;
+	list-style: none ;
+	margin: 0 ;
+	padding: 0 ;
+	/* border: 2px solid #0f0;  */
+	transition: all 0.8s ease-in-out ;
+}
+/* ++++++++++++++++++++++ card : <li></li> ++++++++++++++++++ */
+.special-menu	  ul.slider 	li.card
+{
+	width: 15% ;
+	margin: 18px 0.8% ; 
+	height: auto ;
+	float: left ;
+	text-align: center ;
+	color: #fff ;
+	font-size: 20px ;
+	box-shadow:  2px  4px 5px #555 ,
+				 2px -4px 5px #555 , 
+				-2px  4px 5px #555 , 
+				-2px -4px 5px #555 ;
+	/* border: 2px solid #ff0 ;  */
+}
+/* /////////// card : card-image  /////////// */
+.special-menu .special-body .card .card-image
+{
+	position: relative;
+	/* border: 2px solid #0f0;  */
+}
+.special-menu	  ul.slider 	li.card  .card-image	  img
+{
+	width: 100% ;
+	height: 200px ;
+}
+/* ------------- card : card-price ------------- */
+.special-menu .special-body .card  .card-image .price-holder
+{
+	position: absolute;
+	bottom: -18% ;
+	left: 50% ;
+	transform: translateX(-50%);
+	font-size: 25px;
+    font-weight: bold;
+    width: 20%;
+    height: 28%;
+	/* to center number */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 50%;
+	padding: 12% ;
+	color: #333;
+	background-color: #fff;
+	/* border: 2px solid #f0f;  */
+	box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.4); 
+}
+/* ////////////////////// card : card-content  ////////////////////// */
+.special-menu .special-body .card  .card-content
+{
+	/* padding: 10px ; */
+	background-color: #fff;
+	/* border: 2px solid #00f;  */
+}
+/* ------------- card : card-title ------------- */
+.special-menu .special-body .card  .card-content  .card-title
+{
+	padding-top: 50px ;
+	padding-bottom: 10px ;
+	/* border: 2px solid #ff0;  */
+}
+/* ++++++++++++ card : card-title : h3 +++++++++++++++ */
+.special-menu .special-body .card  .card-content  .card-title .card-title-h3
+{
+	/* font-family: Arial, Helvetica, sans-serif	; */
+	margin-bottom: 15px ;
+	font-size: 16px ;
+	font-weight: bold;
+	color: #333 ;
+}
+/* ++++++++++++ card : card-title : paragraph +++++++++++++++ */
+.special-menu .special-body .card  .card-content  .card-title .card-title-para
+{
+	line-height: 1.5 ;
+	font-size: 15px ;
+	padding: 10px ;
+	color: #999 ;
+}
+/* slider arrows */
+.special-menu .slider-container .slider-arrows	.arrow
+{
+	position: absolute;
+	top: 50% ;
+	height: 45px ;
+	font-size: 25px ;
+	/* +++++++++ to put arrow in center +++++++++ */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px ;
+	border: none;
+	outline: none ;
+	color: #fff ;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+/* prev arrow  */
+.special-menu .slider-container .slider-arrows	.arrow.prev
+{
+	left: 0 ;
+}
+/* next arrow  */
+.special-menu .slider-container .slider-arrows	.arrow.next
+{
+	right: 0 ;
+}
+/* ++++++++++++ view more button ++++++++++++ */
+.special-menu	.viewMore
+{
+	display: block;
+	margin : 50px 0 ;
+	text-align: center;
+	/* border: 2px solid #f00;  */
+}
+.special-menu	.viewMore	a
+{
+	text-decoration: underline ;
+	text-transform: capitalize;
+	color: #000 ;
+	font-size: 18px ;
+	font-weight: bold;
+	letter-spacing: 2px ;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 676px ) 
+{
+	/* ++++++++++++++++++++++ slider : <ul></ul> ++++++++++++++++++ */
+	.special-menu	  ul.slider
+	{
+		width: 600% ;
+		overflow: hidden;
+		padding: 0 ;
+		margin: 0 ;
+	}
+	/* ++++++++++++++++++++++ card : <li></li> ++++++++++++++++++ */
+	.special-menu	  ul.slider 	li.card
+	{
+		width: 15.05% ;
+		height: auto ;
+		float: left ;
+		text-align: center ;
+		color: #fff ;
+		font-size: 20px ;
+		/* border: 2px solid #ff0 ;   */
+	}
+}
+@media( min-width : 677px ) and ( max-width : 1000px ) 
+{
+	/* ++++++++++++++++++++++ slider : <ul></ul> ++++++++++++++++++ */
+	.special-menu	  ul.slider
+	{
+		width: 300% ;
+	}
+	/* ++++++++++++++++++++++ card : <li></li> ++++++++++++++++++ */
+	.special-menu	  ul.slider 	li.card
+	{
+		width: 15% ;
+		margin: 18px 0.8% ; 
+		height: auto ;
+		float: left ;
+		text-align: center ;
+		color: #fff ;
+		font-size: 20px ;
+		/* border: 2px solid #ff0 ;  */
+	}
+}
+/* ======================================= Testimonials Section ======================================= */
+.testimonials
+{
+	/* header اكبر من ال z-index هي الطبق الاعلي حيث هعطيه navbar في اعلي شمال الصفحة وهخلي ال header فهثبت ال header يظهر فوق ال navbar عشان اخلي ال */
+	position: relative; 
+	top: 0 ;
+	left: 0 ;
+	width: 100%;
+	height: 65vh;
+	background-image: url("../images/bg.PNG") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center ;
+	background-attachment: fixed ;
+	/* border: 2px solid #f00;    */
+} 
+/* ++++++++++++++++ container ++++++++++ */
+.testimonials .testi-cont 
+{
+    position: absolute;
+    top: 50% ;
+    left:50% ;
+    transform: translate(-50%,-50%);
+	text-align: center ;
+    /*  headerContainer يكونوا في منتصف ال h2 , p عشان ال  */
+	/* border: 2px solid #ff0 ;    */
+}
+/* --------- "qoute" part --------- */
+.testimonials .testi-cont .testi-qoute
+{
+	margin-bottom: 50px ;
+	/* border: 2px solid #f00;  */
+}
+/* --------- "qoute" icon --------- */
+.testimonials .testi-cont 	.testi-qoute 	i
+{
+	color: #fff ;
+	font-size: 40px ;
+}
+/* --------- "paragraph" part --------- */
+.testimonials .testi-cont .testi-para
+{
+	color: #fff;
+	/* border: 2px solid #0f0;  */
+}
+.testimonials .testi-cont .testi-para	p
+{
+	line-height: 1.4 ;
+	font-weight: 700 ;
+	font-size: 35px ;
+	text-transform: capitalize ;
+}
+/*  --------- "author" part --------- */
+.testimonials .testi-cont .testi-author
+{
+	margin-top: 60px ;
+	color: #fff;
+	/* border: 2px solid #00f;  */
+}
+/* --------- "dash" before and after "author" --------- */
+.testimonials .testi-cont .testi-author	h5
+{
+	font-size: 14px ;
+	font-weight: 400 ;
+}
+/* -------------- "dash" before and after "author" ------------ */
+/* ============= before dash ============= */
+.testimonials .testi-cont .testi-author	h5::before
+{
+	content: "" ;
+	display: inline-block;
+	width: 7px ;
+	height: 1px ;
+	background-color: #fff;
+	margin-right: 5px ;
+	vertical-align: middle;
+}
+/* ============= after dash ============= */
+.testimonials .testi-cont .testi-author	h5::after
+{
+	content: "" ;
+	display: inline-block;
+	width: 7px ;
+	height: 1px ;
+	background-color: #fff;
+	margin-left: 5px ;
+	vertical-align: middle;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 676px ) 
+{
+	/* --------- "qoute" icon --------- */
+	.testimonials .testi-cont 	.testi-qoute 	i
+	{
+		font-size: 33px ;
+	}
+	/* --------- "paragraph" part --------- */
+	.testimonials .testi-cont .testi-para	p
+	{
+		line-height: 1.4 ;
+		font-size: 25px ;
+	}
+	/*  --------- "author" part : h5 --------- */
+	.testimonials .testi-cont .testi-author	h5
+	{
+		font-size: 14px ;
+	}	
+}
+/* ======================================= chief Section ======================================= */
+.chief
+{
+	position: relative;  
+	width: 100% ; 
+	height: auto ;
+ 	/* overflow: hidden ;     */
+	margin: 80px 0 ;
+	padding: 0px ;
+    background-color: #fff;
+    /* border: 2px solid #f00;  */
+}
+.container
+{
+	overflow: visible ;	  
+	/* border: 2px solid #0f0;  */
+}
+/* +++++++++++++++ left part : "chief image" +++++++++++++++ */
+.chief   .chief-img
+{
+	position: relative; 
+	float: left;
+	width: 45% ;
+	height: auto;
+	margin-left: 5% ;
+	height: 450px;
+	/* border: 2px solid #ff0 ;   */
+}
+/* ++++++++++++ "dot-pattern" image ++++++++++++ */
+.chief   .container    .chief-img::after
+{
+	content: "";
+	position: absolute;
+	top: 58%;
+    right: 26%;
+    display: block;
+    width: 90%;
+    height: 55%;
+	z-index: -1 ;
+	background-image: url("../images/dotted_light.png");
+	background-repeat: repeat ;
+	/* border: 2px solid #000;    */
+}
+.chief   .container   .chief-img   img
+{
+	width: 100%;
+	height: 456px ;
+}
+/* +++++++++++++++ right part : "chief info" +++++++++++++++ */
+.chief   .container  .chief-info 
+{
+	position: relative;
+	float: right;
+	width: 45% ;
+	height: auto;
+	overflow: hidden; 
+	margin: 0 ;
+	margin-left: 5% ;
+	text-align: right;
+	/* border: 2px solid #0ff ;   */
+}
+/* ++++ section-title ++++ */
+.chief   .container  .chief-info .section-title
+{
+	color: #000;
+	/* border: 2px solid #f0f ;   */
+}
+/* ++++ small-title ++++ */
+.chief   .container  .chief-info  .small-title
+{
+	text-transform: uppercase;
+	/* border: 2px solid #ff0 ;   */
+}
+/* ++++++++++++++++++++++ slider : <ul></ul> ++++++++++++++++++ */
+.chief   .container  .chief-info  ul.slider
+{
+	width: 600% ; 
+	height: auto ;
+	overflow: hidden ; 
+	list-style: none ;
+	margin: 0 ;
+	padding: 0 ;
+	/* border: 2px solid #0f0;    */
+	transition: all 0.8s ease-in-out ;
+}
+/* ++++++++++++++++++++++ card : <li></li> ++++++++++++++++++ */
+.chief   .container  .chief-info  ul.slider	 li.card
+{
+	position: relative;
+	float: left ;
+	width: 16% ;
+	margin: 1px 0.3% ; 
+	height: auto ;
+	text-align: right ;
+	color: #fff ;
+	font-size: 20px ;
+	padding: 0px 12px ;
+	/* border: 2px solid #ff0 ;    */
+}
+.chief   .container  .chief-info  ul.slider  li.card   h3
+{
+	color: #000 ;
+	font-size: 18px ;
+	font-weight: bold ;
+}
+.chief   .container  .chief-info ul.slider  li.card   .chief-desc .section-para
+{
+	margin : 20px  0 ;
+	/* border: 2px solid #0f0;  */
+}
+/* slider arrows */
+.chief   .container  .chief-info  .slider-arrows
+{
+	position: absolute;
+	bottom: 0% ;
+	right: 4% ;
+	/* border: 2px solid #0f0;  */
+}
+/* +++++++++++++ left , right arrow button +++++++++++++ */
+.chief   .container  .chief-info  .slider-arrows	.arrow
+{
+	display: inline-block ; 
+	padding: 5px ;
+	margin: 10px ;
+	cursor: pointer;
+	outline: none ;
+	border: 0 ;
+	color: #fff ;
+	font-size: 20px ;
+	font-weight: 100;
+	text-transform: uppercase ;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease-in-out ;
+	/* border: 2px solid #0f0;  */
+}
+/* +++++++++++++++++ when hover arrow  +++++++++++++++++ */
+.chief   .container  .chief-info  .slider-arrows	.arrow:hover
+{
+	background-color: #ccc;
+	color: #000 ;
+}
+/* +++++++++++++++++ left arrow +++++++++++++++++ */
+.chief   .container  .chief-info  .slider-arrows	.arrow.prev
+{
+	float: left;
+}
+/* +++++++++++++++++ right arrow +++++++++++++++++ */
+.chief   .container  .chief-info  .slider-arrows	.arrow.next
+{
+	float: right;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	.chief 
+	{
+		margin : 50px 0 ;
+	}
+	/* +++++++++++++++ left part : "chief image" +++++++++++++++ */
+	.chief   .container    .chief-img   
+	{
+		display: none ;
+	}
+	/* +++++++++++++++ right part : "chief info" +++++++++++++++ */
+	.chief   .container    .chief-info 
+	{
+		float: none;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 20px ;
+		clear: both;
+		/* border: 2px solid #ff0 ;    */
+	}
+	/* +++++++++++++++ right part : "chief info" +++++++++++++++ */
+	.chief   .container  .chief-info  .slider-arrows	
+	{
+		position: absolute;
+		bottom: 0% ;
+		right: 50% ;
+		transform: translateX(50%);
+	}
+	.chief   .container  .chief-info  ul.slider  li.card   h3
+	{
+		font-size: 16px ;
+		text-align: center;
+	}
+}
+/* ======================================= news Section ======================================= */
+.news
+{
+	width: 100% ; 
+	height: auto ;
+ 	overflow: hidden ;      
+	margin: 80px auto ;
+	padding: 50px 0px ;
+    background-image: url("../images/bk2.JPG");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    /* border: 2px solid #f00;  */
+}
+/* +++++++++++ news header +++++++++++ */
+.news	.small-title ,
+.news	.section-title
+{
+	text-align: center !important ;
+}
+/* ++++++++++++ news body ++++++++++++ */
+.news .news-body
+{
+	width: 100% ; 
+	height: auto ;
+ 	overflow: hidden ;  
+	/* border: 2px solid #0f0 ;  */
+}
+/* --------- news box --------- */
+.news .news-body .news-box
+{
+	position: relative;
+	float: left;
+	width: 33.3333% ;
+	height: 350px ;
+	/* overflow: hidden;  */
+	text-align: center;
+	background-color: #fff;
+	/* border: 2px solid #0f0 ;	 */
+}
+.news .news-body .news-box img
+{
+	width: 100% ;
+	height: 100% ;
+}
+/* +++++++++++++++++++++++ text Box ++++++++++++++++ */
+.news .news-body .news-box .text-box
+{
+	position: absolute;
+	top: 50% ;
+	left: 50% ;
+	transform: translate(-50%,-50%);
+	width: 300px ;
+	/* border: 2px solid #f0f;  */
+}
+/* +++++++++ new-box : h3 +++++++++ */
+.news .news-body .news-box	.text-box  h3
+{
+	position: relative;
+	text-transform: capitalize ;
+	font-size: 22px ;
+	padding-bottom: 40px ;
+}
+.news .news-body .news-box	.text-box  h3::after
+{
+	content: "";
+	position: absolute;
+	top:100%;
+	left: 50% ;
+	transform: translateX(-50%);
+	width: 60px ;
+	display: block;
+	border-bottom: 1px dashed #999;
+}
+/* ++++++++ new-box : line-under ++++++++ */
+/* +++++++++ new-box : paragraph +++++++++ */
+.news .news-body .news-box	.new-box-para
+{
+	font-size: 16px ;
+	line-height: 2 ;
+	text-transform: capitalize ;
+	margin-top: 30px ;
+	color: #999 ;
+}
+/* +++++++++++++++++ arrow Box +++++++++++++ */
+.news .news-body .news-box.has-arrow
+{
+	position: relative;
+}
+/* +++++++++++++ new-box : arrow +++++++++++++ */
+.news .news-body .has-arrow::before
+{
+	content: "";
+	position: absolute ;
+	top: 50% ;
+	border-top: 20px  solid transparent ;
+	border-bottom: 20px solid transparent;
+}
+/* +++++++++++++ new-box : top arrow +++++++++++++ */
+.news .news-body .news-box.has-arrow.arrow-top::before
+{
+	border-left: 20px solid transparent ;
+	border-right: 20px solid transparent ;
+	top: auto ; 
+	bottom: 100% ;
+	left: 50% ;	
+	transform: translateX(-50%);
+	border-bottom: 20px solid #fff ;
+}
+/* +++++++++++++ new-box : left arrow +++++++++++++ */
+.news .news-body .news-box.has-arrow.arrow-left::before
+{
+	border-right: 20px solid #fff ;
+	right: 100% ;	
+}
+/* +++++++++++++ new-box : right arrow +++++++++++++ */
+.news .news-body .news-box.has-arrow.arrow-right::before
+{
+	border-left: 20px solid #fff ;
+	left: 100% ;	
+	z-index: 1 ;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	/* --------- news box --------- */
+	.news .news-body .news-box
+	{
+		float: none;
+		width: 90% ;
+		margin: 0px auto ;
+	}	
+	.news .news-body .news-box.has-arrow
+	{
+		margin-bottom: 25px ;
+	}
+	/* +++++++++++++ new-box : left arrow +++++++++++++ */
+	/* +++++++++++++ new-box : right arrow +++++++++++++ */
+	.news .news-body .news-box.has-arrow.arrow-left::before ,
+	.news .news-body .news-box.has-arrow.arrow-right::before
+	{
+		border-top: none ;
+		border-bottom: 20px solid #fff ;
+		border-left: 20px solid transparent ;
+		border-right: 20px solid transparent ;
+		left: 50% ;
+		top: auto;
+		bottom: 100% ;
+		transform: translateX(-50%);
+	}
+}
+/* ================= tablet Screen ================ */
+@media( min-width : 768px ) and ( max-width : 1000px ) 
+{
+	/* --------- news box --------- */
+	.news .news-body .news-box
+	{
+		float: left;
+		width: 50% ;
+		margin-bottom: 15px ;
+	}
+	/* +++++++++++++ new-box : left arrow +++++++++++++ */
+	/* +++++++++++++ new-box : right arrow +++++++++++++ */
+	.news .news-body .news-box.has-arrow.arrow-top::before ,
+	.news .news-body .news-box.has-arrow.arrow-right::before 
+	{
+		border-left: none ;
+		border-right: 20px solid #fff ;
+		border-top: 20px solid transparent ;
+		border-bottom: 20px solid transparent ;
+		top: 50% ;
+		left: auto ; 
+		right: 100% ;
+		transform: translateY(-50%);
+	}
+}
+/* ======================================= contact Section ======================================= */
+.contact
+{
+	width: 100% ; 
+	height: auto ;
+ 	overflow: hidden ;      
+	padding: 0px ;
+	padding-top: 30px ;
+	background-image: url("../images/bk2.JPG") ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover ;
+    /* border: 2px solid #f00;   */
+}
+/* ++++++++++++++++++++++++++++ contact header ++++++++++++++++++++++++++++ */
+.contact	.small-title 	,
+.contact	.section-title
+{
+	text-align: center !important ;
+}
+.contact	.small-title 	
+{
+	color: #555 ;
+	text-transform: uppercase;
+	margin: 0 ;
+}
+/* ++++++++++++++++++++++++++++ contact body ++++++++++++++++++++++++++++ */
+.contact	.contact-body
+{
+	width: 85%;
+	height: auto ;
+	overflow: hidden;
+	margin: 0 auto ;
+	padding: 40px 30px ;
+	margin-bottom: -100px ;
+	position: relative; 
+	z-index: 1 ;
+	background-color: #fff;
+	/* border: 2px solid #00f;   */
+}
+/* //////////// left part /////////////  */
+/* //////////// right part ////////////  */
+.contact	.contact-body   .contact-left ,
+.contact	.contact-body   .contact-right
+{
+	width: 45% ;
+	height: auto;
+	overflow: hidden ;
+	/* border: 2px solid #f00;  */
+}
+/*  //////////// left part ////////////  */
+.contact	.contact-body   .contact-left 
+{
+	float: left;
+	margin: 0 ;
+	margin-right: 5% ;
+}
+/* +++++++++ left part : h3 ++++++++++++ */
+.contact	.contact-body   .contact-left  .left-h3
+{
+	font-size: 23px ;
+	text-transform: capitalize;
+}
+.contact	.contact-body   .contact-left  .left-h3  .left-h3-span
+{
+	color: #ccc;
+}
+.contact	.contact-body   .contact-para
+{
+	font-size: 16px ;
+	line-height: 1.6;
+	margin-top: 10px ;
+	margin-bottom: 20px ;
+	color: #aaa;
+}
+.contact	.contact-body   .contact-left  .contact-para  .blackEmail
+{
+	color: #000;
+	margin-top: 20px ;
+	font-weight: bold;
+	text-transform: capitalize ;
+}
+/* ++++++ left part : line ++++++  */
+.contact	.contact-body   .contact-left  .line
+{
+	display: block;
+	width: 60px ;
+	height: 3px ;
+	background-color: #333;
+	margin-top: 100px ;
+}
+/*  //////////// right part ////////////  */
+.contact	.contact-body   .contact-right 
+{
+	float: right;
+	margin: 0 ;
+	margin-left: 5% ;
+}
+.contact	.contact-body   .contact-right  .contact-right-para
+{
+	margin-bottom: 15px ;
+	color: #aaa;
+	font-weight: bold;
+}
+/*  contact-right :  h4  */
+.contact	.contact-body   .contact-right  .contact-h4
+{
+	text-transform: capitalize;
+	color: #333;
+	font-weight: bold;
+}
+/* call-directly : phone number */
+.contact	.contact-body   .contact-right  .call-directly  .phone-number
+{
+	font-size: 25px ;
+	font-weight: bold;
+	margin-bottom: 35px ;
+	color: #333;
+}
+/* ++++++++++++++++++++++++++++ Google Map ++++++++++++++++++++++++++++ */
+.contact	#map
+{
+	width: 100% ;
+    height: 600px ; 
+	clear: both ;
+	/* border: 2px solid #f00 ;  */
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	.contact	.contact-body
+	{
+		margin-bottom: 0 ;
+	}
+	/*  //////////// left part ////////////  */
+	/* //////////// right part ////////////  */
+	.contact	.contact-body   .contact-left ,
+	.contact	.contact-body   .contact-right
+	{
+		float: none ;
+		width: 100% ;
+		margin: 0 auto ;
+		text-align: center;
+	}
+	/*  //////////// left part ////////////  */
+	.contact	.contact-body   .contact-left 
+	{
+		margin-bottom: 30px ;
+	}
+	.contact	.contact-body   .contact-para
+	{
+		line-height: 3 ;
+		font-size: 14px ;
+	}
+	/* left part : line  */
+	.contact	.contact-body   .contact-left  .line
+	{
+		display: block;
+		margin: 10px auto;
+	}
+}
+/* ================= tablet Screen ================ */
+@media( min-width : 768px ) and ( max-width : 1000px ) 
+{
+	.contact	.contact-body   .contact-left  .contact-para
+	{
+		line-height: 2 ;
+		font-size: 15px ;
+	}
+	/* left part : h3  */
+	.contact	.contact-body   .contact-left  .left-h3
+	{
+		font-size: 20px ;
+	}
+	/* call-directly : phone number */
+	.contact	.contact-body   .contact-right  .call-directly  .phone-number
+	{
+		font-size: 20px ;
+	}
+}
+/* ======================================= footer Section ======================================= */
+.footer
+{
+	position: relative;
+	width: 100% ; 
+	height: 360px ;
+ 	overflow: hidden ;      
+	padding: 0px ;
+	text-align: center ;
+	background-color: rgb(22,26,37);
+	/* border: 2px solid #00f ;  */
+}
+.footer .footer-container
+{
+	position: absolute;
+	top: 50% ;
+	left: 50% ;
+	transform: translate(-50%,-50%);
+	width: 550px ;
+	/* border: 2px solid #0f0 ;	 */
+}
+/* //////////////////////////////// footer : logo //////////////////////////////// */
+.footer .footer-container .footer-logo  #logoId	
+{
+	text-decoration: none;
+	font-size: 35px;
+	text-transform: capitalize ;
+	color: #fff;
+	/* border: 2px solid #0ff ;	  */
+}
+/* ++++++++ logo dot ++++++++ */
+.footer .footer-container .footer-logo	#logoId	span
+{
+	font-size: 40px;
+    color: #ff0157;
+}
+/* //////////////////////////////// footer : links //////////////////////////////// */
+/* //////////////////////////////// footer : social-icons ///////////////////////// */
+.footer .footer-container .footer-links ,
+.footer .footer-container .footer-icons
+{
+	margin-bottom: 60px ;
+	/* border: 2px solid #ff0 ;	 	 */
+}
+/* //////////////////// footer : links ///////////////////// */
+.footer .footer-container .footer-links 
+{
+	margin-top: 20px ;
+}
+/* ++++++++++++++ footer : links   : <ul></ul> ++++++++++++++ */
+/* +++++++++ footer : social-icons : <ul></ul> ++++++++++++++ */
+.footer .footer-container .footer-links ul ,
+.footer .footer-container .footer-icons	ul
+{
+	list-style: none ;
+	padding: 10px ;
+	margin: 0 10px ;
+	color: #fff ;
+}
+/* +++++++++++++++ footer : links  : <ul> <li><li> </ul> ++++++++++ */
+/* +++++++++ footer : social-icons : <ul> <li><li> </ul> ++++++++++ */
+.footer .footer-container .footer-links ul	li ,
+.footer .footer-container .footer-icons ul	li
+{
+	display: inline-block;
+	/* margin: 20px ; 	 */
+	text-transform: capitalize;
+	padding: 0  15px ;
+}
+/* +++++++ footer : links  : <ul> <li><li> </ul> : separator +++++++ */
+.footer .footer-container .footer-links ul	li 
+{
+	border-right: 2px solid #666 ;
+}
+.footer .footer-container .footer-links ul	li:first-child 
+{
+	padding-left: 0 ;
+}
+.footer .footer-container .footer-links ul	li:last-child 
+{
+	padding-right: 0 ;
+	border: 0 ;
+}
+/* ++++++++++ footer : links  : <ul> <li> <a></a> <li> </ul> ++++++++++ */
+/* ++++ footer : social-icons : <ul> <li> <a></a> <li> </ul> ++++++++++ */
+.footer .footer-container .footer-links ul	li	a ,
+.footer .footer-container .footer-icons ul	li	a
+{
+	text-decoration: none ;
+	color: #fff ;
+	font-size: 20px ;
+	transition: 0.3s ease-in-out;
+}
+.footer .footer-container .footer-links ul	li a:hover ,
+.footer .footer-container .footer-icons ul	li a:hover
+{
+	color: #666 ;
+}
+/* ++++++++++++++ footer : social-icons ++++++++++++++ */
+.footer .footer-container .footer-icons
+{
+	margin-bottom: 0px ;
+}
+/* //////////////////////////////// footer : copyright ////////////////////////////////  */
+.footer .footer-container .copyright
+{
+	margin-top: 10px ;
+	/* border: 2px solid #f00 ; 		  */
+}
+.footer .footer-container .copyright  p
+{
+	text-transform: capitalize;
+	color: #fff ;
+	line-height: 1.5 ;
+	color: #666 ;
+	font-size: 18px ;
+}
+/* ++++++++++++++++++++++++++++++++++++ Responsive ++++++++++++++++++++++++++++++++++++ */
+/* ================= mobile Screen ================ */
+@media( min-width : 0px ) and ( max-width : 767px ) 
+{
+	.footer
+	{
+		height: 500px ; 
+	}
+	.footer .footer-container
+	{
+		width: 350px ;
+		/* border: 2px solid #0f0 ;	 */
+	}
+	/* +++++++++++++++ footer : links  : <ul> <li><li> </ul> ++++++++++ */
+	.footer .footer-container .footer-links ul	li 
+	{
+		display: block ;
+		padding: 0 ;
+		border: 0 ;
+		margin-top: 20px ;
+	}
+	.footer .footer-container .footer-links ul	li:last-child
+	{
+		margin-bottom: 0 ;
+	}
+	.footer .footer-container .footer-links ul	li 	a
+	{
+		font-size: 18px ;
+	}
+	/* +++++++++ footer : social-icons : <ul> <li><li> </ul> ++++++++++ */
+	.footer .footer-container .footer-icons ul	li
+	{
+		padding: 0 10px ;
+	}
+	.footer .footer-container .footer-icons ul	li	a
+	{
+		font-size: 18px ;
+	}
+}
